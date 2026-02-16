@@ -6,67 +6,7 @@
 content="592beb022646fcf28ade7b5af05d3eb1" />
   <title>PRODUCT SHOWCASE</title>
   <style>
-    /* Navigation container */
-.navbar {
-  background: #ffffff;
-  padding: 15px;
-  display: flex;
-  gap: 30px;
-  position: relative;
-  font-family: Arial, sans-serif;
-}
-
-/* Menu items */
-.nav-item {
-  position: relative;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Dropdown wrapper */
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: #ffffff;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  width: 500px;
-  border-radius: 6px;
-  z-index: 10;
-
-  /* two-column layout */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-/* Show dropdown when hovering */
-.nav-item:hover .dropdown {
-  display: grid;
-}
-
-/* Column titles */
-.dropdown h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-}
-
-/* Links */
-.dropdown a {
-  display: block;
-  color: #333;
-  padding: 5px 0;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.dropdown a:hover {
-  color: #0c7bbe;
-}
+  
 
     body {
       font-family: Arial, sans-serif;
@@ -122,7 +62,61 @@ content="592beb022646fcf28ade7b5af05d3eb1" />
     .card a:hover {
       opacity: 0.85;
     }
+  
+.navbar {
+  background: #ffffff;
+  padding: 15px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
 
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 500px;
+  border-radius: 6px;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.nav-item:hover .dropdown {
+  display: grid;
+}
+
+.dropdown h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.dropdown a {
+  display: block;
+  color: #333;
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.dropdown a:hover {
+  color: #0c7bbe;
+}
   </style>
 </head>
 <body>
